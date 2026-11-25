@@ -1,8 +1,8 @@
 import { createContext, useCallback, useContext, useMemo } from 'react';
 import useLocalStorage from '../hook/LocalStorage';
 import { useStore } from './TiendaContexto';
-import { getProductById } from '../paginas/catalogo/variable/ProductVariable';
-import { computeTotals, priceLines } from '../paginas/Carro/variables/CarroVariable.';
+import { getProductById } from '../paginas/usuario/catalogo/variable/ProductVariable';
+import { computeTotals, priceLines } from '../paginas/usuario/Carro/variables/CarroVariable.';
 
 const CarroContexto = createContext(null);
 

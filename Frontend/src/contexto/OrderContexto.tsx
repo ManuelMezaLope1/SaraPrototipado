@@ -2,7 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo } from 'reac
 import useLocalStorage from '../hook/LocalStorage';
 import { useStore } from './TiendaContexto';
 import { useAuth } from './AuthContexto';
-import { computeTotals } from '../paginas/Carro/variables/CarroVariable.';
+import { computeTotals } from '../paginas/usuario/Carro/variables/CarroVariable.';
 import { CANCELABLE, STATUS_FLOW } from '../data/DatosCuenta';
 
 // Pedidos (compras y reservas con carrito), invitados o con cuenta.

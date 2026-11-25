@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useMemo } from 'react';
 import useLocalStorage from '../hook/LocalStorage';
-import { getProductById } from '../paginas/catalogo/variable/ProductVariable';
+import { getProductById } from '../paginas/usuario/catalogo/variable/ProductVariable';
 
 const TiendaContexto = createContext(null);
 

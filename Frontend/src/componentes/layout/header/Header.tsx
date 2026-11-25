@@ -25,6 +25,7 @@ export default function Header() {
                 <Link to={"colecciones"}>Colecciones</Link>
                 <Link to={"promociones"}>Promociones</Link>
                 <Link to={"nosotros"}>Nuestra Tienda</Link>
+                <Link to={"dashboard"}>Dashboard</Link>
 
                 <div className="ml-auto flex items-center gap-4 sm:gap-5 lg:ml-6">
                     <Link to={"favoritos"} className="relative" aria-label={`Favoritos (${favorites.length})`}>

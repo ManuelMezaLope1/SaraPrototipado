@@ -4,7 +4,7 @@
 /* Colores y tipografías personalizadas para Sara */
 @theme {
   --color-sara-ink: #111111;
-  --color-sara-stone: #99958f;
+  --color-sara-stone: #6b6560;
   --color-sara-dark: #222120;
   --color-sara-cream: #f2eee7;
   --color-sara-line: #e4dfd6;
@@ -59,33 +59,24 @@
   .button{
     @apply border-sara-line;
   }
-}
 
-/* Slider de precio */
-input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  height: 2px;
-  background: #111;
-  outline: none;
-  width: 100%;
-}
+  .btn-blush{
+    @apply inline-flex items-center justify-center gap-4 bg-sara-blush px-7 py-5 text-[11px] font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:bg-sara-stone disabled:cursor-not-allowed disabled:bg-sara-stone/50 cursor-pointer;
+  }
 
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 18px;
-  height: 18px;
-  border-radius: 9999px;
-  background: #111;
-  cursor: pointer;
-}
+  .btn-editar{
+    @apply w-full bg-sara-stone px-4 py-2 text-sm text-white hover:bg-sara-brown cursor-pointer;
+  }
 
-input[type="range"]::-moz-range-thumb {
-  width: 18px;
-  height: 18px;
-  border: 0;
-  border-radius: 9999px;
-  background: #111;
-  cursor: pointer;
+  .btn-agregar{
+    @apply flex items-center gap-2 rounded-xl bg-sara-ink px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-sara-blush active:scale-95 cursor-pointer;
+  }
+
+  .input{
+    @apply block w-full px-3 py-2 text-base font-normal leading-normal text-gray-900 bg-white border border-gray-300 rounded-md appearance-none transition-colors focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/25 disabled:bg-gray-100 disabled:opacity-75
+  }
+
+  .select{
+    @apply block px-3 py-2 text-base font-normal leading-normal text-gray-900 bg-white border border-gray-300 rounded-md cursor-pointer focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/25 disabled:bg-gray-100 disabled:opacity-75
+  }
 }
